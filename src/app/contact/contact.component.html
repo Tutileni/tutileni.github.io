@@ -1,0 +1,163 @@
+<!-- Start Contact===================================-->
+    <section class="full-page" id="contact" class="scrollable section">
+        <div class="contact overlay-container" style="overflow: hidden;" tabindex="5004">
+          <div class="contact-intro-section">
+                <div class="overlay">
+                    <div class="kayo-container">
+                        <div class="section-intro">
+                            <div class="text-center kayo-icon-box-container">
+                                <div class="kayo-icon-box">
+                                    <span class="glyphicon glyphicon-headphones kayo-icon"></span>
+                                </div>
+                            </div>
+                            <h1 class="text-center" [translate]="'contactme.title'">
+                                CONTACT ME
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-ways">
+                <div class="kayo-container">
+                    <div class="mrkayo-main-title">
+                        <h2>
+                            <span class="kayo-line" [translate]="'contactme.getintouch.title'">Get In Touch</span>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="kayo-icon-list-box">
+                                <div class="kayo-icon-box-container">
+                                    <div class="kayo-icon-box">
+                                        <span class="glyphicon glyphicon-map-marker kayo-icon"></span>
+                                    </div>
+                                </div>
+                                <div class="kayo-list-info">
+                                    <h4 [translate]="'contactme.getintouch.location.title'">Location</h4>
+                                    <p [translate]="'contactme.getintouch.location.content'">
+                                        Paris, FRANCE
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="kayo-icon-list-box">
+                                <div class="kayo-icon-box-container">
+                                    <div class="kayo-icon-box">
+                                        <span class="glyphicon glyphicon-phone kayo-icon"></span>
+                                    </div>
+                                </div>
+                                <div class="kayo-list-info">
+                                    <h4 [translate]="'contactme.getintouch.phone.title'">Phone</h4>
+                                    <p [translate]="'contactme.getintouch.phone.content'">
+                                        +33 648 56 547
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="kayo-icon-list-box">
+                                <div class="kayo-icon-box-container">
+                                    <div class="kayo-icon-box">
+                                        <span class="glyphicon glyphicon-envelope kayo-icon"></span>
+                                    </div>
+                                </div>
+                                <div class="kayo-list-info">
+                                    <h4 [translate]="'contactme.getintouch.email.title'">Email</h4>
+                                    <p [translate]="'contactme.getintouch.email.content'">
+                                        simaopedro0903@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="overlay">
+                    <div class="kayo-container">
+                        <div class="mrkayo-main-title">
+                            <h2>
+                                <span class="kayo-line" [translate]="'contactme.sendmessage.title'">Send Message</span>
+                            </h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                                <form id="myform" class="kayo-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                                    <div class="input-row">
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="{{ 'contactme.sendmessage.smsabout' | translate }}" name="message_about" formControlName="message_about" required type="text">
+                                            <div class="col-md-4" *ngIf="message_about.invalid && (message_about.dirty || message_about.touched)">
+                                            <div *ngIf="message_about.errors.required" class="text-danger">
+                                                <small [translate]="'danger.contact.message_about.required'">*Subject is required.</small>
+                                            </div>
+                                            <div *ngIf="message_about.errors.minlength" class="text-danger">
+                                                <small [translate]="'danger.contact.message_about.length'">*Subject must be at least 2 characters long</small>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input pattern="[a-zA-Z][a-zA-Z ]+" class="form-control" placeholder="{{ 'contactme.sendmessage.fullname' | translate }}" name="full_name" type="text" formControlName="full_name" required>
+                                            <div class="col-md-4" *ngIf="full_name.invalid && (full_name.dirty || full_name.touched)">
+                                            <div *ngIf="full_name.errors.required" class="text-danger">
+                                                <small [translate]="'danger.contact.full_name.required'">*Name is required.</small>
+                                            </div>
+                                            <div *ngIf="full_name.errors.minlength" class="text-danger">
+                                                <small [translate]="'danger.contact.full_name.length'">*Name must be at least 2 characters long</small>
+                                            </div>
+                                            <div [hidden]="!full_name.hasError('pattern')" class="text-danger">
+                                                    <small [translate]="'danger.contact.full_name.pattern'">Only alphabets allowed</small>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-row">
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="{{ 'contactme.sendmessage.email' | translate }}"  name="email" type="email" formControlName="email">
+                                            <div class="col-md-4" *ngIf="email.invalid && (email.dirty || email.touched)">
+                                            <div class="text-danger" *ngIf="email.errors.required">
+                                                <small [translate]="'danger.contact.email.required'">*Email is required</small>
+                                            </div>
+                                            <div class="text-danger" *ngIf="email.errors.email">
+                                                <small [translate]="'danger.contact.email.invalid'">*Invalid email</small>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="{{ 'contactme.sendmessage.phone' | translate }}" 
+                                            minlength="10" maxlength="10"
+                                            pattern="[0-9]*" name="phone" type="text" formControlName="phone">
+                                            <div class="col-md-4" [hidden]="phone.valid || phone.pristine">
+                                            <div class="text-danger" [hidden]="!phone.hasError('pattern')">
+                                                <small [translate]="'danger.contact.phone.required'">*Mobile number should be only numbers</small>
+                                            </div>
+                                            <div [hidden]="!phone.hasError('minlength')" class="text-danger">
+                                                 <small [translate]="'danger.contact.phone.length'">*Mobile should be 10 digit</small></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message_html" placeholder="{{ 'contactme.sendmessage.yoursms' | translate }}" formControlName="message_html"></textarea>
+                                        <div class="col-md-4" *ngIf="message_html.invalid && (message_html.dirty || message_html.touched)">
+                                        <div class="text-danger" *ngIf="message_html.errors.required">
+                                            <small [translate]="'danger.contact.message.required'">*message is required</small>
+                                        </div>
+                                        <div class="text-danger" *ngIf="message_html.errors.minlength">
+                                            <small [translate]="'danger.contact.message.length'">*Message must be at least 2 characters long</small>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button #sendOffer id="sendOffer" class="btn kayo-btn-1 btn-block btn-rgba" (click)="this.popup.isDisplayed=true" type="submit" name="button" [disabled]="contactForm.invalid">
+                                            <i class="fa fa-send-o"></i> {{ (this.popup.get()==true?'contactme.sendmessage.sendyoursms.sendg':'contactme.sendmessage.sendyoursms.send') | translate }}
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact ==================-->

@@ -1,0 +1,181 @@
+
+<div id="default-popup" (mouseover)="this.popup.resetVar()" class="avgrund-popup">
+    <h4 [translate]="'popup.title'">That's all, Your message has been sent successfully</h4>
+      <p [translate]="'popup.getintouch'">I'll be in touch soon</p>
+        <p [translate]="'popup.after'">See you later !</p>
+        <p [translate]="'popup.greeting'">Best regards</p>
+    <button onclick="javascript:closeDialog();" [translate]="'popup.close'">Close</button>
+  </div>
+<div class="avgrund-cover" (mouseover)="this.popup.resetVar()"></div>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Simão PEDRO</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        
+      <ul class="nav navbar-nav" #langSelect>
+          <li>
+            <select class="" #langSelect (change)="translate.use(langSelect.value)">
+              <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang"><span id="img">{{createListSelect(lang)}}</span></option>
+            </select>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+              <div class="header--nav-toggle" (click)="outerNav(true)">
+                <span></span>
+              </div>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+<div class="perspective container effect-rotate-left" [ngClass]="divClassPerspective">
+    <div class="container"><div class="outer-nav--return" [ngClass]="isVis" (click)="outerNav(!true)"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+          </header>
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+              <li *ngFor="let title of listMenuTitles; let i = index" (click)="select(listMenuTitles[i]);" [ngClass]="{isActive: isActive(listMenuTitles[i])}">
+                <span>{{ title | translate }}</span>
+            </li>
+            </ul>
+          </nav>
+          <ul class="l-main-content">
+            <li class="l-section setion" [ngClass]="{sectionIsActive: activeContent()==listMenuTitles[0]}">
+              <div class="intro">
+                <div class="intro--banner">
+                  <p [translate]="'Home.greeting'">HI, I am </p>
+                    <h1>Simão PEDRO</h1><p [translate]="'Home.specialization'">Software Engeneer </p>
+                  <!--<div>
+                      I'm a Software Engeneer by profession. I'm also the lead of wait-on-tutileni.
+                      My expertise is in solution ideation, visualization and prototyping.
+                      I'm an open source software aficionado and a Java evangelist by passion.
+                      I'm also a passionate technology enthusiast and Networks.
+                      I also love Science, Social Life and Robotics
+                      I'm currently authoring a web project about socialnetwork.
+                  </div>-->
+  
+                  <button class="" (click)="select(listMenuTitles[4]);" ><span [translate]="'Home.hireme'">Hire Me</span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                    <span class="btn-background"></span>
+                  </button>
+                  <!-- <img src="../assets/img/introduction-visual.png" alt="Welcome"> -->
+                </div>
+                <div class="intro--options">
+                  <a href="#0">
+                    <h3>Café com Java</h3>
+                    <p>Café com Java é uma quadro onde encontrará alguns artigos interessantes sobre a linguagem de programação Java, de modo que haja uma compreensão simples e facilitada por parte do leitor</p>
+                  </a>
+                  <a href="#0">
+                    <h3>Administração de Redes Informáticas</h3>
+                    <p>Aqui você terá a oportunidade de desfrutar profundamente o mundo das redes informáticas e poderá utilizar este conhecimento no seu cotidiano</p>
+                  </a>
+                  <a href="#0">
+                    <h3>Descomplicando a programação</h3>
+                    <p>Este é um quadro com fins académicos, teremos a oportunidade de mostrar as boas práticas e formas simples de criar programas com recurso a várias linguagens de programação</p>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="l-section setion" [ngClass]="{sectionIsActive: activeContent()==listMenuTitles[2]}">
+              <div class="work">
+                  <app-resume></app-resume>
+              </div>
+            </li>
+            <li class="l-section setion" [ngClass]="{sectionIsActive: activeContent()==listMenuTitles[1]}">
+              <div class="about">
+                <app-about></app-about>
+              </div>
+            </li>
+            <li class="l-section setion" [ngClass]="{sectionIsActive: activeContent()==listMenuTitles[3]}">
+              <div class="contact-me">
+                <app-contact></app-contact>
+              </div>
+            </li>
+            <li class="l-section setion" [ngClass]="{sectionIsActive: activeContent()==listMenuTitles[4]}">
+              <div class="hire scrollable panel panel-default">
+                  <div class="panel-heading" [translate]="'hireme.title'">You want me to do</div>
+                  <div class="panel-body">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="alert alert-danger col-sm-5 col-md-6 danger" *ngIf="!isAtleastOneItemSelected() && isSelected.dirty" [translate]="'danger.hiring.options.required'">
+                          *Select at least one item
+                      </div>
+                      <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0"></div>
+                    </div>
+                  </div>
+                <!-- checkout formspree.io for easy form setup -->
+                <form class="work-request" id="hiring" [formGroup]="hiringForm" (ngSubmit)="onSubmitHiring()">
+                  <div class="work-request--options btn-group btn-group-justified">
+                    <span class="options-a"><div *ngFor="let item1 of checkboxItems1;let j = index">
+                      <input id="opt-{{j+1}}" type="checkbox" value="{{ item1.traduction | translate }}" name="{{ item1.name | translate }}" required formControlName="isSelected" (change)="changeSelectedCheckbox(j,$event,checkboxItems1)">
+                      <label for="opt-{{j+1}}">
+                        <span>{{ item1.traduction | translate }}</span>
+                      </label></div>
+                    </span>
+                    <span class="options-b">
+                      <div *ngFor="let item2 of checkboxItems2;let i = index">
+                      <input id="opt-{{i+4}}" type="checkbox" value="{{ item2.traduction | translate }}" name="{{ item2.name | translate }}" required formControlName="isSelected" (change)="changeSelectedCheckbox(i,$event,checkboxItems2)">
+                      <label for="opt-{{i+4}}">
+                        <span>{{ item2.traduction | translate }}</span> 
+                      </label></div>
+                    </span>
+                  </div>
+                  <div class="form-horizontal">
+                    <div class="form-group">
+                      <input class="form-control col-xs-3 style" pattern="[a-zA-Z][a-zA-Z ]+" id="name" type="text" spellcheck="false" name="hireme_name" formControlName="hireme_name" required placeholder="{{ 'hireme.name' | translate }}">
+                      <div class="col-md" *ngIf="hireme_name.invalid && (hireme_name.dirty || hireme_name.touched)">
+                          <div *ngIf="hireme_name.errors.required" class="alert alert-danger" [translate]="'danger.hiring.hireme_name.required'">*Name is required.</div>
+                          <div *ngIf="hireme_name.errors.minlength" class="alert alert-danger" [translate]="'danger.hiring.hireme_name.length'">*Name must be at least 2 characters long</div>
+                          <div [hidden]="!hireme_name.hasError('pattern')" class="alert alert-danger" [translate]="'danger.hiring.hireme_name.pattern'">Only alphabets allowed</div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control col-xs-3 style" id="email" type="email" placeholder="{{ 'hireme.email' | translate }}" spellcheck="false" required formControlName="email" name="email">
+                        <div class="col-md" *ngIf="email.invalid && (email.dirty || email.touched)">
+                              <div class="alert alert-danger" *ngIf="email.errors.required" [translate]="'danger.hiring.email.required'">*Email is required</div>
+                              <div class="alert alert-danger" *ngIf="email.errors.email" [translate]="'danger.hiring.email.invalid'">*Invalid email</div>
+                        </div>
+                    </div>
+                  </div>
+                  <button #hiringFORM id="hiringFORM" (click)="this.popup.isDisplayed=true" class="btn kayo-btn-1 btn-block btn-rgba" type="submit" name="button" [disabled]="hiringForm.invalid">
+                    <i class="fa fa-send-o"></i> {{ (this.popup.get()==true?'hireme.sendrequest.sendg':'hireme.sendrequest.send') | translate }}
+                  </button>
+                </form>
+              </div>
+            </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <ul class="outer-nav" [ngClass]="isVis" (click)="outerNav(!true)">
+        <li [ngClass]="isVis" *ngFor="let title of listMenuTitles; let i = index" (click)="select(listMenuTitles[i]);" [ngClass]="{isActive: isActive(listMenuTitles[i])}">
+            {{ title | translate }}
+        </li>
+    </ul>
+  </div>
+
+<!-- 
+  <div class="device-notification">
+      <a class="device-notification--logo" href="#0">
+        <img src="assets/img/logo.png" alt="Tutileni">
+        <p>Simao Pedro</p>
+      </a>
+      <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+    </div>
+   -->

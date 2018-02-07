@@ -1,0 +1,200 @@
+{   "months":{
+     "jan":"January",
+     "feb":"February",
+     "mar":"March",
+     "apr":"April",
+     "may":"May",
+     "jun":"June",
+     "jul":"July",
+     "aug":"August",
+     "sep":"September",
+     "oct": "October",
+     "nov":"November",
+     "dec":"December",
+     "since":"Since"
+    },
+    "Home":{
+        "title":"Home",
+        "greeting":"Hi, I am",
+        "specialization":"Software Engeneer",
+        "hireme":"HIRE ME"
+    },
+    "about":{
+        "title":"ABOUT ME",
+        "knowme":{
+            "title":"know me",
+            "hello":"hello",
+            "pesentation":"I’m Simão PEDRO. I designed this site so you can get to know me on a personal level. My career as a network designer,as a programmer. Some articles, my personal projects, my blog, my favorite quotes, and so much more. So please sit back and enjoy!"
+        },
+        "service":{
+            "title":"service",
+            "webdevelop":{
+                "title":"Web develop",
+                "content":"My services make available to the client a series of efficient solutions and able to represent their business on the Internet in the best way, through a Web Site with an attractive and functional presentation"
+            },
+            "mobileapp":{
+                "title":"Mobile Aplications",
+                "content":"I develop mobile applications with good reliability using state-of-the-art technologies, thus developing hybrid applications (using Ionic 3) that will reduce the cost of developing the customer's product"
+            },
+            "dbdesign":{
+                "title":"DB Design",
+                "content":"This is a solution that I propose to those who want to model and implement a database in their companies or web sites"
+            },
+            "networks":{
+                "title":"Networks",
+                "content":"Every company needs a computer network. I propose simple and secure solutions for creating and managing user accounts in the company. With this solution, I can provide the implementation of the company's servers according to their size (small and medium companies)"
+            }
+        },
+        "awesomefacts":{
+            "title":"Awesome Facts",
+            "projects":"Projects",
+            "workhours":"Work Hours",
+            "customersupport":"Customer SUPPORT",
+            "happyclients":"Happy Clients"
+        }
+    },
+    "resume":{
+        "title":"RESUME",
+        "myexperience":{
+            "title":"My experience",
+            "education":{
+                "title":"education",
+                "first":{
+                    "title":"University Institute of Technology",
+                    "subtitle":"University Diploma Of Technology, Network and Telecommunications",
+                    "place":"Belfort-Montbéliard ",
+                    "content":"Network and telecommunications occupations include the understanding, installation, administration and maintenance of computer networks and telecommunications networks. The graduate of this DUT can practice in all organizations using the new technologies of information and communication (NICT). He masters the technologies found in local business networks (wired and wireless), long distance and internet telecommunications networks, multimedia access networks (fixed and mobile), corporate communication systems (videoconferencing. ..). "
+                },
+                "second":{
+                    "title":"Higher Institute of Electronics of Paris",
+                    "subtitle":"Engineering Degree, Computer Science",
+                    "place":"Paris",
+                    "content":"As a software engineer I have expertise that allows me to intervene as a specialist in different environments, either at the design level or at the software implementation level. I have a global vision, going beyond the technical framework, which allows me to be the referent in terms of technical choices. In addition, my managerial skills allow me to quickly take responsibility for project management."
+                }
+            },
+            "workhistory":{
+                "title":"Work history",
+                "first":{
+                    "title":"Magillem design Services",
+                    "subject":"Web Developer, spring framework",
+                    "place":"Paris",
+                    "content":"Magillem is a Leading Provider of Complex Design Flow and Content Management Software Solutions. Ecodex (e-Justice Communication via Online Data Exchange), is a european project that aims to improve the cross-border access of citizens and businesses to legal means in Europe, as well as to improve the interoperability between judicial authorities within of the EU. Functionality that provides an easier (digital) way to exchange legal information between EU countries. My role in this project was the development and design of forms views in java/2jee, this involves modeling, unit tests and optimization of interface development methods."
+                },
+                "second":{
+                    "title":"Cirruseo",
+                    "subject":"Python Developer",
+                    "place":"Paris",
+                    "content":"Cirruseo is the leading independent partner of Google Cloud in France, has developed its skills and partnerships around the major players in this market as Google, as well as more specialized players like Freshworks, Powertools for Google Drive, etc. Cirruseo's service offerings range from consulting, cloud trajectory definition, to BI and implementation of targeted solutions."
+                }
+            }
+        },
+        "softskills":{
+            "title":"soft skills",
+            "communication":"Communication",
+            "workinteam":"Work In Team",
+            "speed":"Speed",
+            "creativity":"creativity"
+        },
+        "technicalskills":{
+            "title":"Technical Skills",
+            "backend":"BackEnd",
+            "frontend":"FrontEnd",
+            "networkadmin":"Network Admin",
+            "opensource":"OpenSource",
+            "detail":"Details"
+        }
+    },
+    "contactme":{
+        "title":"CONTACT",
+        "getintouch":{
+            "title":"Get In Touch",
+            "location":{
+                "title":"Location",
+                "content":"Paris, France"
+            },
+            "phone":{
+                "title":"Phone",
+                "content":"0648566547"
+            },
+            "email":{
+                "title":"E-mail",
+                "content":"simaopedro0903@gmail.com"
+            }
+        },
+        "sendmessage":{
+            "title":"Send Message",
+            "smsabout":"Message about",
+            "fullname":"Full Name",
+            "email":"Email",
+            "phone":"Phone (Optional)",
+            "yoursms":"Your Message",
+            "sendyoursms":{
+                "send":"Send",
+                "sendg":"Sinding..."
+            }
+        }
+    },
+    "hireme":{
+        "contract":"Hiring",
+        "title":"You want me to do",
+        "mobapp":"Mobile App",
+        "webdev":"WebSite Developement",
+        "servers":"Servers Management",
+        "network":"Network Design",
+        "project":"Project Management",
+        "other":"Other",
+        "sendrequest":{
+            "send":"Send Request",
+            "sendg":"Sending Request..."
+        },
+        "name":"Name",
+        "email":"Email"
+    },
+    "danger":{
+        "contact":{
+            "message_about":{
+                "required":"*Subject is required.",
+                "length":"*Subject must be at least 2 characters long"
+            },
+            "full_name":{
+                "required":"*Name is required.",
+                "length":"*Name must be at least 2 characters long",
+                "pattern":"*Only alphabets allowed"
+            },
+            "email":{
+                "required":"*email is required.",
+                "invalid":"invalid email"
+            },
+            "phone":{
+                "notNumber":"*Phone number should be only numbers",
+                "length":"*Mobile should be 10 digit"
+            },
+            "message":{
+                "required":"*message is required",
+                "length":"*Message must be at least 2 characters long"
+            }
+        },
+        "hiring":{
+            "options":{
+                "required":"*Select at least one option"
+            },
+            "hireme_name":{
+                "required":"*Name is required.",
+                "length":"*Name must be at least 2 characters long",
+                "pattern":"*Only alphabets allowed"
+            },
+            "email":{
+                "required":"*email is required.",
+                "invalid":"invalid email"
+            }
+        }
+    },
+    "popup":{
+       "title":"That's all, Your message has been sent successfully",
+       "getintouch":"I'll be in touch soon", 
+       "after":"See you later !",    
+       "greeting":"Best regards",
+       "close":"Close"     
+    }
+
+}
