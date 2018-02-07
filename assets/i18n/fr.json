@@ -1,0 +1,199 @@
+{   "months": {
+       "jan":"Janvier",
+       "feb": "Février",
+       "mer": "Mars",
+       "apr": "Avril",
+       "may": "May",
+       "jun": "Juin",
+       "jul": "Juillet",
+       "aug": "Août",
+       "sep": "Septembre",
+       "oct": "Octobre",
+       "nov": "Novembre",
+       "dec": "Décembre",
+       "since":"Depuis"
+    },
+    "Home":{
+        "title":"Accueil",
+        "greeting":"Bonjour, je m'appelle",
+        "specialization":"Engenheiro de software",
+        "hireme":"Embauche moi"
+    },
+    "about":{
+        "title":"À PROPOS DE MOI",
+        "knowme":{
+            "title":"Connais-moi",
+            "hello":"Bonjour",
+            "pesentation":"Je m'appelle Simão PEDRO. J'ai conçu ce site pour que vous puissiez me rencontrer personnellement. Ma carrière en tant que concepteur de réseau, développeur d'ordinateur, quelques articles, mes projets personnels, mon blog, mes citations préférées et plus. Alors asseyez-vous et amusez-vous!"
+        },
+        "service":{
+            "title":"Service",
+            "webdevelop":{
+                "title":"Développeur Web",
+                "content":"Mes services mettent à la disposition du client une série de solutions efficaces capables de représenter au mieux leur activité sur Internet, grâce à un site Web présentant une présentation attrayante et fonctionnelle."
+            },
+            "mobileapp":{
+                "title":"Applications mobiles",
+                "content":"Je développe des applications mobiles avec une bonne fiabilité en utilisant des technologies de pointe, développant ainsi des applications hybrides (utilisant IONIC 3) qui ont réduit le coût de développement du produit du client"
+            },
+            "dbdesign":{
+                "title":"Base de données",
+                "content":"C'est une solution que je propose aux clients qui veulent modéliser et implémenter une base de données dans leurs entreprises ou sites web"
+            },
+            "networks":{
+                "title":"Réseaux informatiques",
+                "content":"Chaque entreprise a besoin d'un réseau informatique. Je propose des solutions simples et sécurisées pour créer et gérer des comptes utilisateurs dans l'entreprise. Avec cette solution, je conçois la mise en place des serveurs de l'entreprise en fonction de leur taille"
+            }
+        },
+        "awesomefacts":{
+            "title":"Faits impressionnants",
+            "projects":"Projects",
+            "workhours":"Work Hours",
+            "customersupport":"Support client",
+            "happyclients":"Clients heureux"
+        }
+    },
+    "resume":{
+        "title":"C.V",
+        "myexperience":{
+            "title":"Mon expérience",
+            "education":{
+                "title":"éducation",
+                "first":{
+                    "title":"Institut universitaire de technologie",
+                    "subtitle":"Diplôme Universitaire de Technologie, Réseau et Télécommunications",
+                    "place":"Belfort-Montbéliard ",
+                    "content":"Les métiers du réseau et des télécommunications comprennent la compréhension, l'installation, l'administration et la maintenance de réseaux informatiques et de réseaux de télécommunication. Le diplômé de ce DUT peut exercer dans toutes les organisations utilisant les nouvelles technologies de l'information et de la communication (NTIC). Il maîtrise les technologies présentes dans les réseaux d'entreprises locaux (filaires et sans fil), les réseaux de télécommunication longue distance et Internet, les réseaux d'accès multimédia (fixes et mobiles), les systèmes de communication d'entreprise (vidéoconférence ...)."
+                },
+                "second":{
+                    "title":"Institut Supérieur d'Electronique de Paris",
+                    "subtitle":"Diplôme d'ingénieur, Informatique",
+                    "place":"Paris",
+                    "content":"En tant qu'ingénieur logiciel, j'ai une expertise qui me permet d'intervenir en tant que spécialiste dans différents environnements, soit au niveau de la conception, soit au niveau de l'implémentation logicielle. J'ai une vision globale, dépassant le cadre technique mais dont elle forme la base, ce qui me permets d'être le référent en termes de choix techniques. De plus, mes compétences managériales me permettent de prendre rapidement la responsabilité de la gestion de projet."
+                }
+            },
+            "workhistory":{
+                "title":"Historique de travail",
+                "first":{
+                    "title":"Magillem design Services",
+                    "subject":"Développeur Web, spring MVC",
+                    "place":"Paris",
+                    "content":"Magillem est un fournisseur leader de solutions logicielles complexes de gestion de flux et de contenu. Ecodex (e-Justice Communication via Online Data Exchange), est un projet européen qui vise à améliorer l'accès transfrontalier des citoyens et des entreprises aux moyens légaux en Europe, ainsi qu'à améliorer l'interopérabilité entre les autorités judiciaires au sein de l'UE. Fonctionnalité offrant un moyen (numérique) plus facile d'échanger des informations juridiques entre les pays de l'UE. Mon rôle dans ce projet était le développement et la conception de vues de formes dans java/2jee, ceci implique la modélisation, les tests unitaires et l'optimisation des méthodes de développement d'interfaces."
+                },
+                "second":{
+                    "title":"Cirruseo",
+                    "subject":"Développeur Python",
+                    "place":"Paris",
+                    "content":"Cirruseo est le premier partenaire indépendant de Google Cloud en France, a développé ses compétences et ses partenariats autour des acteurs majeurs de ce marché, ainsi que des acteurs plus spécialisés comme Freshworks, Powertools pour Google Drive, etc. Les offres de services de Cirruseo vont du conseil, à la définition de la trajectoire du cloud, à la BI et à la mise en œuvre de solutions ciblées."
+                }
+            }
+        },
+        "softskills":{
+            "title":"Savoir-être",
+            "communication":"Communication",
+            "workinteam":"Travail d'équipe",
+            "speed":"Rapidité",
+            "creativity":"Créativité"
+        },
+        "technicalskills":{
+            "title":"Compétences techniques",
+            "backend":"BackEnd",
+            "frontend":"FrontEnd",
+            "networkadmin":"Administrateur réseau",
+            "opensource":"OpenSource",
+            "detail":"Détails"
+        }
+    },
+    "contactme":{
+        "title":"CONTACT",
+        "getintouch":{
+            "title":"Prendre contact",
+            "location":{
+                "title":"Lieu",
+                "content":"Paris, França"
+            },
+            "phone":{
+                "title":"Téléphone",
+                "content":"0648566547"
+            },
+            "email":{
+                "title":"E-mail",
+                "content":"simaopedro0903@gmail.com"
+            }
+        },
+        "sendmessage":{
+            "title":"Envoyer un message",
+            "smsabout":"Sujet",
+            "fullname":"NOM Prénom",
+            "email":"E-mail",
+            "phone":"Téléphone (Optionel)",
+            "yoursms":"Votre message",
+            "sendyoursms":{
+                "send":"Envoyer",
+                "sendg":"En cours d'envoi..."
+            }
+        }
+    },
+    "hireme":{
+        "contract":"Contract",
+        "title":"Vous voulez que je fasse",
+        "mobapp":"Application mobile",
+        "webdev":"Développement de site web",
+        "servers":"Gestion de serveur",
+        "network":"Conception d'un réseau",
+        "project":"Gestion de projet informatique",
+        "other":"Autre",
+        "sendrequest":{
+                "send":"Envoyer une demande",
+                "sendg":"Demande en cours d'envoi..."
+        },
+        "name":"NOM Prénom",
+        "email":"E-mail"
+    },
+    "danger":{
+        "contact":{
+            "message_about":{
+                "required":"*Le sujet est obligatoire.",
+                "length":"*Le sujet doit contenir au moins 2 caractères"
+            },
+            "full_name":{
+                "required":"*Le nom et prénom sont obligatoires.",
+                "length":"*ce champs doit contenir au moins 2 caractères",
+                "pattern":"*Seules les lettres sont autorisées."
+            },
+            "email":{
+                "required":"*E-mail est obligatoire.",
+                "invalid":"*E-mail invalide"
+            },
+            "phone":{
+                "notNumber":"*ce champ ne doit contenir que des chiffres",
+                "length":"*Le numéro doit comporter 10 chiffres"
+            },
+            "message":{
+                "required":"*Le message est obligatoire.",
+                "length":"*Le message doit comporter au moins 2 caractères"
+            }
+        },
+        "hiring":{
+            "options":{
+                "required":"*Sélectionnez au moins un service"
+            },
+            "hireme_name":{
+                "required":"*Le nom est obligatoire.",
+                "length":"*Le nom doit comporter au moins 2 caractères",
+                "pattern":"*Seules les lettres sont autorisées"
+            },
+            "email":{
+                "required":"*E-mail est obligatoire.",
+                "invalid":"*E-mail invalide"
+            }
+        }
+    },
+    "popup":{
+       "title":"Ça y est! votre message a été envoyé avec succès",
+       "getintouch":"Je prendrai contact avec vous bientôt.", 
+       "after":"À plus tard!",    
+       "greeting":"Cordialement!",
+       "close":"Fermer"     
+    }
+}
